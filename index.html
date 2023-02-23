@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>rating page</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Rating First -->
+  <section class="rating-first" id="rating-first">
+    <img src="images/icon-star.svg" alt="icon-star">
+    <h1>How did we do?</h1>
+    <p>
+      Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!
+    </p>
+    <div class="rating" id="rating">
+      <!-- one -->
+      <input type="radio" name="rated" id="1" onclick="rate()">
+      <label for="1">1</label>
+      <!-- two -->
+      <input type="radio" name="rated" id="2" onclick="rate()">
+      <label for="2">2</label>
+      <!-- three -->
+      <input type="radio" name="rated" id="3"  onclick="rate()">
+      <label for="3">3</label>
+      <!-- four -->
+      <input type="radio" name="rated" id="4"  onclick="rate()">
+      <label for="4">4</label>
+      <!-- five -->
+      <input type="radio" name="rated" id="5"  onclick="rate()">
+      <label for="5">5</label>
+    </div>
+    <button type="submit" onclick="display()">Submit</button>
+  </section>
+    <!-- rating second -->
+  <section class="rating-second" id="rating-second">
+    <img src="images/illustration-thank-you.svg" alt="Thank you">
+    <span id="result">you havn't choosed</span>
+    <h1>Thank you!</h1>
+    <p>
+      We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!
+    </p>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
