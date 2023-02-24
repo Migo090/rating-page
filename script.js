@@ -10,11 +10,8 @@ function display(){
     document.getElementById("rating-first").style.display = "none";
     document.getElementById("rating-second").style.display = "flex";
 }
-function rate(){
-    for(let i =1;i<6;i++){
-        choose = document.getElementById(i);
-        if (choose.checked){
-            document.getElementById("result").innerText = `You selected ${i} out of 5`;
-        }
+for(let n =1;n<6;n++){
+    document.getElementById(`${n}`).onclick = function (){
+        return document.getElementById("result").innerText = `You selected ${n} out of 5`;
     }
 }
